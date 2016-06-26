@@ -143,7 +143,14 @@ Task("InitializeBuild")
 // BUILD
 //////////////////////////////////////////////////////////////////////
 
+Task("BuildClientUtils")
+	.Does(() =>
+	{
+        BuildProject("src/Common/nunit.client.utils/nunit.client.utils.csproj", configuration);
+	});
+
 Task("Build45")
+	.IsDependentOn("BuildClientUtils")
     .Does(() =>
     {
         BuildProject("src/NUnitFramework/framework/nunit.framework-4.5.csproj", configuration);
@@ -157,6 +164,7 @@ Task("Build45")
     });
 
 Task("Build40")
+	.IsDependentOn("BuildClientUtils")
     .Does(() =>
     {
         BuildProject("src/NUnitFramework/framework/nunit.framework-4.0.csproj", configuration);
@@ -170,6 +178,7 @@ Task("Build40")
     });
 
 Task("Build35")
+	.IsDependentOn("BuildClientUtils")
     .Does(() =>
     {
         BuildProject("src/NUnitFramework/framework/nunit.framework-3.5.csproj", configuration);
@@ -183,6 +192,7 @@ Task("Build35")
     });
 
 Task("Build20")
+	.IsDependentOn("BuildClientUtils")
     .Does(() =>
     {
         BuildProject("src/NUnitFramework/framework/nunit.framework-2.0.csproj", configuration);
@@ -236,6 +246,7 @@ Task("BuildCF")
     {
         if(isCompactFrameworkInstalled)
         {
+	        BuildProjectCF("src/Common/nunit.client.utils/nunit.client.utils-netcf-3.5.csproj", configuration);
             BuildProjectCF("src/NUnitFramework/framework/nunit.framework-netcf-3.5.csproj", configuration);
             BuildProjectCF("src/NUnitFramework/mock-assembly/mock-assembly-netcf-3.5.csproj", configuration);
             BuildProjectCF("src/NUnitFramework/testdata/nunit.testdata-netcf-3.5.csproj", configuration);
@@ -255,6 +266,7 @@ Task("BuildCF")
 
 Task("BuildEngine")
     .IsDependentOn("InitializeBuild")
+	.IsDependentOn("BuildClientUtils")
     .Does(() =>
     {
         // Engine Commponents

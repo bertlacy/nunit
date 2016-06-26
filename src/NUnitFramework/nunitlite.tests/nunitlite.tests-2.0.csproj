@@ -55,9 +55,6 @@
     <Compile Include="..\..\Common\tests\DefaultOptionsProviderTests.cs">
       <Link>DefaultOptionsProviderTests.cs</Link>
     </Compile>
-    <Compile Include="..\..\Common\tests\ExtendedTextWrapperTests.cs">
-      <Link>ExtendedTextWrapperTests.cs</Link>
-    </Compile>
     <Compile Include="..\..\Common\tests\OutputSpecificationTests.cs">
       <Link>OutputSpecificationTests.cs</Link>
     </Compile>
@@ -104,6 +101,10 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\nunit.client.utils\nunit.client.utils.csproj">
+      <Project>{ff7e8da1-c749-44a7-a0e7-20a78c96dd1a}</Project>
+      <Name>nunit.client.utils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\framework\nunit.framework-2.0.csproj">
       <Project>{12B66B03-90F1-4992-BD33-BDF3C69AE49E}</Project>
       <Name>nunit.framework-2.0</Name>

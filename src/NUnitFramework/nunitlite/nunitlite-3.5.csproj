@@ -45,26 +45,11 @@
     <Compile Include="..\..\CommonAssemblyInfo.cs">
       <Link>Properties\CommonAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="..\..\Common\nunit\ColorConsole.cs">
-      <Link>ColorConsole.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Common\nunit\ColorConsoleWriter.cs">
-      <Link>ColorConsoleWriter.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Common\nunit\ColorStyle.cs">
-      <Link>ColorStyle.cs</Link>
-    </Compile>
     <Compile Include="..\..\Common\nunit\CommandLineOptions.cs">
       <Link>CommandLineOptions.cs</Link>
     </Compile>
     <Compile Include="..\..\Common\nunit\DefaultOptionsProvider.cs">
       <Link>DefaultOptionsProvider.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Common\nunit\ExtendedTextWrapper.cs">
-      <Link>ExtendedTextWrapper.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Common\nunit\ExtendedTextWriter.cs">
-      <Link>ExtendedTextWriter.cs</Link>
     </Compile>
     <Compile Include="..\..\Common\nunit\IDefaultOptionsProvider.cs">
       <Link>IDefaultOptionsProvider.cs</Link>
@@ -108,6 +93,10 @@
     <Compile Include="TextUI.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\nunit.client.utils\nunit.client.utils.csproj">
+      <Project>{ff7e8da1-c749-44a7-a0e7-20a78c96dd1a}</Project>
+      <Name>nunit.client.utils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\framework\nunit.framework-3.5.csproj">
       <Project>{7FA125B4-E377-4D4C-AECB-17B934E3A4B3}</Project>
       <Name>nunit.framework-3.5</Name>

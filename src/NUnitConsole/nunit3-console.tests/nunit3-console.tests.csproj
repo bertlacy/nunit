@@ -45,9 +45,6 @@
     <Compile Include="..\..\Common\tests\DefaultOptionsProviderTests.cs">
       <Link>DefaultOptionsProviderTests.cs</Link>
     </Compile>
-    <Compile Include="..\..\Common\tests\ExtendedTextWrapperTests.cs">
-      <Link>ExtendedTextWrapperTests.cs</Link>
-    </Compile>
     <Compile Include="..\..\Common\tests\OutputSpecificationTests.cs">
       <Link>OutputSpecificationTests.cs</Link>
     </Compile>
@@ -57,8 +54,6 @@
     <Compile Include="..\ConsoleVersion.cs">
       <Link>Properties\ConsoleVersion.cs</Link>
     </Compile>
-    <Compile Include="ColorConsoleTests.cs" />
-    <Compile Include="ColorStyleTests.cs" />
     <Compile Include="CommandLineTests.cs" />
     <Compile Include="ConsoleOutputTests.cs" />
     <Compile Include="MakeTestPackageTests.cs" />
@@ -79,6 +74,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\nunit.client.utils\nunit.client.utils.csproj">
+      <Project>{ff7e8da1-c749-44a7-a0e7-20a78c96dd1a}</Project>
+      <Name>nunit.client.utils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\NUnitEngine\nunit.engine\nunit.engine.csproj">
       <Project>{372A3447-D657-40FF-A089-77C19FEC30C8}</Project>
       <Name>nunit.engine</Name>

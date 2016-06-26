@@ -59,9 +59,6 @@
     <Compile Include="..\..\CommonAssemblyInfo.cs">
       <Link>CommonAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="..\..\Common\tests\ExtendedTextWrapperTests.cs">
-      <Link>ExtendedTextWrapperTests.cs</Link>
-    </Compile>
     <Compile Include="..\..\Common\tests\TestSelectionParserTests.cs">
       <Link>TestSelectionParserTests.cs</Link>
     </Compile>
@@ -90,6 +87,10 @@
     <Compile Include="TextUITests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\nunit.client.utils\nunit.client.utils-netcf-3.5.csproj">
+      <Project>{CC00F1E3-958C-494D-9667-90E9585F1631}</Project>
+      <Name>nunit.client.utils-netcf-3.5</Name>
+    </ProjectReference>
     <ProjectReference Include="..\framework\nunit.framework-netcf-3.5.csproj">
       <Project>{5F6CB3DC-5CE5-4C6A-AB23-936DB3B35DCC}</Project>
       <Name>nunit.framework-netcf-3.5</Name>
