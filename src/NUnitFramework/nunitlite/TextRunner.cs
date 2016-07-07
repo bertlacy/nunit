@@ -33,7 +33,6 @@ using NUnit.Framework.Api;
 using NUnit.Framework.Interfaces;
 using NUnit.Framework.Internal;
 using NUnit.Framework.Internal.Filters;
-using NUnit.Framework;
 
 namespace NUnitLite
 {
