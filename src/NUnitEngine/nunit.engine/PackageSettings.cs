@@ -112,6 +112,12 @@ namespace NUnit.Engine
         public const string DisposeRunners = "DisposeRunners";
 
         /// <summary>
+        /// Bool flag indicating that the test assemblies should be shadow copied. 
+        /// Defaults to false.
+        /// </summary>
+        public const string ShadowCopyFiles = "ShadowCopyFiles";
+
+        /// <summary>
         /// Bool flag indicating that user profile should be loaded on test runner processes
         /// </summary>
         public const string LoadUserProfile = "LoadUserProfile";
