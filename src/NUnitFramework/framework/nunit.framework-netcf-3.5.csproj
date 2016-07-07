@@ -87,9 +87,6 @@
     <Compile Include="..\..\Common\nunit\Logging\Logger.cs">
       <Link>Internal\Logger.cs</Link>
     </Compile>
-    <Compile Include="..\..\Common\nunit\PackageSettings.cs">
-      <Link>Api\PackageSettings.cs</Link>
-    </Compile>
     <Compile Include="..\FrameworkVersion.cs">
       <Link>FrameworkVersion.cs</Link>
     </Compile>
@@ -101,6 +98,7 @@
     <Compile Include="Api\NUnitTestAssemblyRunner.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Api\PackageSettings.cs" />
     <Compile Include="Assert.Comparisons.cs">
       <DependentUpon>Assert.cs</DependentUpon>
     </Compile>
