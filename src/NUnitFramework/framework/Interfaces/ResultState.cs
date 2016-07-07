@@ -204,7 +204,7 @@ namespace NUnit.Framework.Interfaces
         /// </returns>
         public override int GetHashCode()
         {
-            return (int)Status << 8 + (int)Site ^ Label.GetHashCode(); ;
+            return (int)Status << 8 + (int)Site ^ Label.GetHashCode();
         }
 
         #endregion

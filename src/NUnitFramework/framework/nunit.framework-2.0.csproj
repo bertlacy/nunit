@@ -72,9 +72,6 @@
     <Compile Include="..\..\Common\nunit\Logging\Logger.cs">
       <Link>Internal\Logger.cs</Link>
     </Compile>
-    <Compile Include="..\..\Common\nunit\PackageSettings.cs">
-      <Link>Api\PackageSettings.cs</Link>
-    </Compile>
     <Compile Include="..\FrameworkVersion.cs">
       <Link>Properties\FrameworkVersion.cs</Link>
     </Compile>
@@ -159,6 +156,7 @@
     <Compile Include="Internal\ParameterWrapper.cs" />
     <Compile Include="Internal\TestNameGenerator.cs" />
     <Compile Include="Internal\TypeWrapper.cs" />
+    <Compile Include="Api\PackageSettings.cs" />
     <Compile Include="TestFixtureData.cs" />
     <Compile Include="DirectoryAssert.cs" />
     <Compile Include="Does.cs" />

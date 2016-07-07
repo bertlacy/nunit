@@ -25,12 +25,8 @@ using System;
 using System.Reflection;
 using System.Threading;
 using System.Globalization;
-using NUnit.Common;
-using NUnit.Framework;
 using NUnit.Framework.Constraints;
 using NUnit.Framework.Internal.Execution;
-using NUnit.TestData.TestContextData;
-using NUnit.TestUtilities;
 
 #if !NETCF
 using System.Security.Principal;

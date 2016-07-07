@@ -22,11 +22,9 @@
 // ***********************************************************************
 
 using System;
-using System.Collections;
 using System.IO;
 using System.Reflection;
 using System.Threading;
-using NUnit.Common;
 using NUnit.Framework.Interfaces;
 using NUnit.Framework.Internal;
 using NUnit.Framework.Internal.Execution;

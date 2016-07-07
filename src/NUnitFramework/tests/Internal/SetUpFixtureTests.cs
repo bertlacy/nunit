@@ -6,9 +6,7 @@
 
 // TODO: Figure out how to make test work in SILVERLIGHT, since they support SetUpFixture
 #if !SILVERLIGHT && !PORTABLE
-using System.Collections;
 using System.Collections.Generic;
-using NUnit.Common;
 using NUnit.Framework.Api;
 using NUnit.Framework.Interfaces;
 
