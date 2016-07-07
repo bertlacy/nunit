@@ -71,9 +71,6 @@
     <Compile Include="..\..\Common\nunit\Logging\Logger.cs">
       <Link>Internal\Logger.cs</Link>
     </Compile>
-    <Compile Include="..\..\Common\nunit\PackageSettings.cs">
-      <Link>PackageSettings.cs</Link>
-    </Compile>
     <Compile Include="..\..\Common\nunit\TestSelectionParser.cs">
       <Link>Services\TestSelectionParser.cs</Link>
     </Compile>
@@ -102,6 +99,7 @@
     <Compile Include="ITestAgent.cs" />
     <Compile Include="Agents\RemoteTestAgent.cs" />
     <Compile Include="Agents\TestAgent.cs" />
+    <Compile Include="PackageSettings.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CallbackHandler.cs" />
     <Compile Include="Internal\DomainUsage.cs" />

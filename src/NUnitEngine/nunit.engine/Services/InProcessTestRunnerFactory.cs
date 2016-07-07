@@ -21,8 +21,6 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // ***********************************************************************
 
-using System;
-using NUnit.Common;
 using NUnit.Engine.Internal;
 using NUnit.Engine.Runners;
 

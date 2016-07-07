@@ -26,8 +26,6 @@ using System.IO;
 using System.Threading;
 using System.Diagnostics;
 using System.Collections.Generic;
-using System.Reflection;
-using NUnit.Common;
 using NUnit.Engine.Internal;
 
 namespace NUnit.Engine.Services

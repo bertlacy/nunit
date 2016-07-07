@@ -25,7 +25,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Mono.Cecil;
-using NUnit.Common;
 using NUnit.Engine.Internal;
 
 namespace NUnit.Engine.Services

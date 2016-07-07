@@ -22,8 +22,6 @@
 // ***********************************************************************
 
 using System;
-using System.Xml;
-using NUnit.Common;
 using NUnit.Engine.Internal;
 using NUnit.Engine.Services;
 
